@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags for Fast Google Ranking -->
+    <title>Movie Downloads - Watch & Download Free Latest Movies and Web Series</title>
+    <meta name="description" content="Download latest Bollywood, Hollywood, South Indian, and Bangla movies and web series for free in high quality with fast download links.">
+    <meta name="keywords" content="movie downloads, free movies, web series, bangla dubbed movies, action movies, movie link bd">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="triggerPopupAd(event)">
+
+    <!-- Top Message Ad Box (Notification Style) -->
+    <div class="top-msg-ad" onclick="openAdLink()">
+        📢 Join our Telegram Channel for fast movie updates & direct links! Click Here 🚀
+    </div>
+
+    <!-- Header & Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="https://i.ibb.co.com/ZzPRsbyd/file-00000000ea5882119de529e8098ae838.png" alt="Movie Downloads Logo" class="site-logo">
+        </div>
+        <div class="admin-btn-container">
+            <a href="admin.html" class="admin-link">⚙️ Admin Login</a>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <div class="categories-container">
+        <button class="cat-btn active" onclick="filterCategory('All')">🏠 ALL</button>
+        <button class="cat-btn" onclick="filterCategory('Bangla')">🇧🇩 বাংলা</button>
+        <button class="cat-btn" onclick="filterCategory('Hindi')">🇮🇳 হিন্দি</button>
+        <button class="cat-btn" onclick="filterCategory('Hindi Dubbed')">🎙️ হিন্দি ডাবড</button>
+        <button class="cat-btn" onclick="filterCategory('Action')">⚔️ অ্যাকশন</button>
+        <button class="cat-btn" onclick="filterCategory('Romance')">💖 রোমান্স</button>
+        <button class="cat-btn" onclick="filterCategory('Thriller')">🧩 থ্রিলার</button>
+        <button class="cat-btn" onclick="filterCategory('Animation')">🎨 অ্যানিমেশন</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Movie বা Series-এর English নাম লিখুন..." onkeyup="searchMovies()">
+        <button class="search-btn">🔍</button>
+    </div>
+
+    <!-- 320x50 Top Banner Ad -->
+    <div class="ad-320-50" id="bannerAd1">
+        <!-- এখানে আপনার 320x50 ব্যানার অ্যাড কোড বা লিংক বসাতে পারবেন -->
+        <span>[ 320 x 50 Banner Ad Space ]</span>
+    </div>
+
+    <!-- Movie Grid Section (2 movies per row) -->
+    <section class="movie-section">
+        <h2>RECENTLY UPDATED</h2>
+        <div class="movie-grid" id="movieGrid">
+            <!-- Dynamic Movies will load here from LocalStorage -->
+        </div>
+    </section>
+
+    <!-- 320x50 Bottom Banner Ad -->
+    <div class="ad-320-50" id="bannerAd2">
+        <span>[ 320 x 50 Banner Ad Space ]</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Global Click Ad Redirection Trigger (Incom বৃদ্ধির জন্য)
+        function triggerPopupAd(e) {
+            // আপনি চাইলে এখানে আপনার পপ-আন্ডার অ্যাড বা সিপিএ (CPA) লিংকের কোড সেট করতে পারেন
+            // বর্তমানে এটি সাইটের অন্য লিংকে ক্লিক নিরাপদ রাখতে ব্ল্যাঙ্ক রাখা হয়েছে
+        }
+        function openAdLink() {
+            // মেসেজ অ্যাড লিংকের জন্য
+            window.open("https://www.profitablecpmrate.com", "_blank"); // এখানে আপনার অ্যাড লিংক বসাতে পারবেন
+        }
+    </script>
+</body>
+          </html>

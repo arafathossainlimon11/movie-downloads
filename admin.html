@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Movie Downloads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Message Ad Box -->
+    <div class="top-msg-ad" onclick="openAdLink()">
+        📢 Admin Portal - Secure Access Only 🚀
+    </div>
+
+    <!-- Header & Logo -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="https://i.ibb.co.com/ZzPRsbyd/file-00000000ea5882119de529e8098ae838.png" alt="Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="admin-btn-container">
+            <a href="index.html" class="admin-link">🏠 Home</a>
+        </div>
+    </header>
+
+    <!-- Admin Login Box -->
+    <div class="admin-login-box" id="loginBox">
+        <h2>Admin Login</h2>
+        <input type="password" id="adminPass" placeholder="Enter Password (arafat45456)">
+        <button onclick="checkLogin()" class="save-btn" style="margin-top: 10px;">Login</button>
+        <p id="errorMsg" style="color: red; margin-top: 10px; font-size: 13px;"></p>
+    </div>
+
+    <!-- Admin Dashboard (Hidden initially) -->
+    <div class="admin-dashboard" id="dashboardBox" style="display: none;">
+        <h2>Upload New Movie</h2>
+        <form id="movieForm" onsubmit="addMovie(event)">
+            <input type="text" id="mName" placeholder="Movie Name (e.g. The Paradise (2026))" required>
+            <input type="text" id="mImage" placeholder="Image Hosting Link (ImgBB Link)" required>
+            <select id="mCategory" required>
+                <option value="Bangla">Bangla</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Hindi Dubbed">Hindi Dubbed</option>
+                <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Animation">Animation</option>
+            </select>
+            <input type="text" id="mYear" placeholder="Release Year / Date (e.g. 2026-09-25)" required>
+            <textarea id="mDesc" placeholder="Movie Storyline / Description" rows="4" required></textarea>
+            <input type="text" id="mSize" placeholder="File Size (e.g. 700 MB / 1.2 GB)" required>
+            <input type="text" id="mLink" placeholder="Final Movie Download Link" required>
+            <button type="submit" class="save-btn">Save Movie to Site</button>
+        </form>
+        <button onclick="logoutAdmin()" class="logout-btn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openAdLink() {
+            window.open("https://www.profitablecpmrate.com", "_blank");
+        }
+    </script>
+</body>
+</html>

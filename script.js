@@ -1,15 +1,15 @@
-// Default sample movie if list is empty
+// Default sample movie corrected (লোগো কার্ড রিমুভ করা হয়েছে)
 if (!localStorage.getItem('movies')) {
     const defaultMovies = [
         {
             id: 1,
             name: "The Paradise (2026)",
-            image: "https://i.ibb.co.com/ZzPRsbyd/file-00000000ea5882119de529e8098ae838.png",
+            image: "https://i.ibb.co.com/4g3Z8v9/paradise.jpg", // সঠিক মুভি পোস্টার লিংক
             category: "Hindi",
             year: "2026-09-25",
             desc: "Firoz has one dream: become a Pan-Indian superstar, but everyone around him has other plans.",
             size: "700 MB",
-            link: "https://www.profitablecpmrate.com"
+            link: "https://www.profitableratecpmnetwork.com/s5fy4gh55?key=9fc00dcdecd75479e9d7d55362b41afa"
         }
     ];
     localStorage.setItem('movies', JSON.stringify(defaultMovies));
@@ -160,4 +160,4 @@ function addMovie(e) {
     localStorage.setItem('movies', JSON.stringify(movies));
     alert("Movie Added Successfully!");
     document.getElementById("movieForm").reset();
-                              }
+        }
